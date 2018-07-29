@@ -17,7 +17,9 @@
     // buckle up
     "strict": true,
     // where to put output
-    "outDir": "out-tsc"
+    "outDir": "out-tsc",
+
+    "lib": ["dom","es2015"],
   },
   "exclude": ["node_modules", "dist", "out-tsc"]
 }
