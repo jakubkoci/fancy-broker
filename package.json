@@ -1,0 +1,28 @@
+{
+  "name": "fancy-broker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server -d",
+    "format": "prettier --write '**/*.{ts,tsx,js,jsx}'"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/html-webpack-plugin": "^3.2.0",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "@types/webpack": "^4.4.8",
+    "@types/webpack-dev-server": "^2.9.5",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.14.0",
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
