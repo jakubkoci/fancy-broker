@@ -17,6 +17,7 @@ const config = {
   devServer: {
     // overlay: true,
     stats: 'errors-only',
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -27,7 +28,7 @@ const config = {
       },
     ],
   },
-  plugins: [new HTMLWebpackPlugin({ template: './src/index.html' })],
+  plugins: [new HTMLWebpackPlugin({ template: './public/index.html' })],
 }
 
 module.exports = config

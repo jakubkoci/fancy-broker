@@ -19,7 +19,7 @@
     // where to put output
     "outDir": "out-tsc",
 
-    "lib": ["dom","es2015"],
+    "lib": ["dom","es2017"],
   },
   "exclude": ["node_modules", "dist", "out-tsc"]
 }

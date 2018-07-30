@@ -1,16 +1,6 @@
-import customers from './data.json'
 import currency from 'currency.js'
-
-type Customer = {
-  _id: string,
-  name: {
-    first: string
-    last: string
-  }
-  latitude: number
-  longitude: number
-  balance: string
-}
+import customers from './data.json'
+import { Customer } from './types'
 
 export function fetchHomeData() {
   const customerCount = customers.length

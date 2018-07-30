@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "currency.js": "^1.1.4",
+    "lunr": "^2.3.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-google-maps": "^9.4.5",
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "@types/html-webpack-plugin": "^3.2.0",
+    "@types/lunr": "^2.1.5",
     "@types/react": "^16.4.7",
     "@types/react-dom": "^16.0.6",
     "@types/react-router-dom": "^4.3.0",

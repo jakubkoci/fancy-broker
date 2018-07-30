@@ -1,8 +1,6 @@
-import React, { Children } from 'react'
+import React from 'react'
 import { fetchHomeData } from '../customers'
 import Map from './Map'
-
-type Props = {}
 
 type HomeData = {
   customerCount: number
