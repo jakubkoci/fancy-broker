@@ -1,5 +1,5 @@
 import React from 'react'
-import { Customer } from '../types'
+import CustomerList from './CustomerList'
 import { fullTextSearch } from '../search'
 
 const initialState = {
@@ -29,33 +29,8 @@ export default class Search extends React.Component {
         <button type="text" onClick={this.handleSearchSubmit}>
           Serach
         </button>
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Name</th>
-            </tr>
-          </thead>
-          <tbody>
-            {result.map((customer: Customer) => (
-              <CustomerListItem key={customer._id} customer={customer} />
-            ))}
-          </tbody>
-        </table>
+        <CustomerList customers={result} />
       </div>
     )
   }
-}
-
-function CustomerListItem({ customer }: { customer: Customer }) {
-  return (
-    <tr>
-      <td>
-        {customer._id}
-      </td>
-      <td>
-        {customer.name.last}&nbsp;{customer.name.first}
-      </td>
-    </tr>
-  )
 }
