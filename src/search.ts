@@ -19,6 +19,7 @@ function initSearchIndex() {
     this.field('name_last')
     this.ref('_id')
     
+    // Search library does not support deep search in JS object, so we need to flat deeper attributes to 1st level
     // TODO Setup index to search also into `friends` attribute
     customers.map(searchIndexMapper).forEach(customer => {
       this.add(customer)

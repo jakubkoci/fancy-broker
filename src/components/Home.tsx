@@ -1,5 +1,5 @@
 import React from 'react'
-import { fetchHomeData } from '../customers'
+import { fetchStatistics } from '../statistics'
 import Map from './Map'
 
 type HomeData = {
@@ -33,7 +33,7 @@ export default class Home extends React.Component<{}, State> {
   fetchHomeData = async () => {
     this.setState({ loading: true })
     try {
-      const data = fetchHomeData()
+      const data = fetchStatistics()
       this.setState({ loading: false, data: { ...data } })
     } catch (error) {
       this.setState({ loading: false, error: 'Something went wrong :(' })
